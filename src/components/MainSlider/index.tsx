@@ -12,7 +12,7 @@ type Props = {};
 
 export default function index({}: Props) {
   return (
-    <div>
+    <section className={s.slider_section}>
       {/* TODO: tag picture & webp */}
       <Swiper
         modules={[Pagination, Autoplay]}
@@ -133,6 +133,6 @@ export default function index({}: Props) {
           </Container>
         </SwiperSlide>
       </Swiper>
-    </div>
+    </section>
   );
 }

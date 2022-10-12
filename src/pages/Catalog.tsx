@@ -1,7 +1,12 @@
 import React from "react";
+import Catalog from "../components/Catalog";
 
 type Props = {};
 
-export default function Catalog({}: Props) {
-  return <div>Catalog</div>;
+export default function CatalogPage({}: Props) {
+  return (
+    <main>
+      <Catalog />
+    </main>
+  );
 }

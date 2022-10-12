@@ -1,0 +1,13 @@
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  margin-top: 80px;
+}
+.footer_link {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 600;
+}

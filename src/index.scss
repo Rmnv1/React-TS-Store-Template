@@ -44,7 +44,21 @@ a {
   color: var(--black);
 }
 section {
-  padding: 40px 0px;
+  padding-top: 40px;
+}
+#root {
+  height: 100%;
+  & > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    & main {
+      flex: 1 1 auto;
+    }
+    & footer {
+      flex: 0 0 auto;
+    }
+  }
 }
 
 @media (prefers-color-scheme: light) {

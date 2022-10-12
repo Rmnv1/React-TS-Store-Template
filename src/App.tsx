@@ -6,6 +6,7 @@ import Catalog from "./pages/Catalog";
 import Delivery from "./pages/Delivery";
 import About from "./pages/About";
 import routes from "./pages/routes";
+import Footer from "./components/Footer";
 
 type Props = {};
 
@@ -16,9 +17,9 @@ export default function App({}: Props) {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/catalog" element={<Catalog />} />
-        <Route path="/Delivery" element={<Delivery />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

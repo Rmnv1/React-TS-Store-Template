@@ -1,7 +1,12 @@
 import React from "react";
+import About from "./../components/About";
 
 type Props = {};
 
-export default function About({}: Props) {
-  return <div>About</div>;
+export default function AboutPage({}: Props) {
+  return (
+    <main>
+      <About />
+    </main>
+  );
 }

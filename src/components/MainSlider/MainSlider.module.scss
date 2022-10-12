@@ -2,6 +2,9 @@
 @import "swiper/scss/navigation";
 @import "swiper/scss/pagination";
 
+section.slider_section {
+  padding: 0;
+}
 .banner {
   width: 100%;
   height: 100%;
