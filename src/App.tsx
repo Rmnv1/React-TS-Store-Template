@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Catalog from "./pages/Catalog";
 import Delivery from "./pages/Delivery";
 import About from "./pages/About";
+import routes from "./pages/routes";
 
 type Props = {};
 

@@ -1,0 +1,29 @@
+@import "swiper/scss";
+@import "swiper/scss/navigation";
+@import "swiper/scss/pagination";
+
+.banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+.slider_content {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  flex-direction: column;
+  color: #fff;
+  & h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  & p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 35px;
+  }
+}
