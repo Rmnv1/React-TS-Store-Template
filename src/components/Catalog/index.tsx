@@ -1,6 +1,8 @@
 import Container from "@mui/material/Container";
 import React from "react";
 import ProductCard from "../ProductCard";
+import SectionTitle from "../UI/SectionTitle/";
+
 import s from "./Catalog.module.scss";
 
 type Props = {};
@@ -9,7 +11,7 @@ export default function Catalog({}: Props) {
   return (
     <section>
       <Container>
-        <h2 className={s.title}>Каталог товаров</h2>
+        <SectionTitle>Каталог товаров</SectionTitle>
         <div className={s.wrapper}>
           <ProductCard />
           <ProductCard />
