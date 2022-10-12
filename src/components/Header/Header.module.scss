@@ -144,3 +144,9 @@
     color: var(--main);
   }
 }
+
+@media (max-width: 1100px) {
+  .header_nav {
+    display: none;
+  }
+}
