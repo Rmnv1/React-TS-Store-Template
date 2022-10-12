@@ -1,0 +1,146 @@
+.header {
+  box-shadow: 0px 2px 0px rgba(128, 128, 128, 0.15);
+  height: 100px;
+  div {
+    height: 100%;
+  }
+}
+
+.logo {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-right: 5rem;
+  & span {
+    font-weight: 800;
+    color: var(--main);
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_left {
+  display: flex;
+  align-items: center;
+}
+.header_nav {
+  position: relative;
+  &::before {
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: var(--gray-1);
+    /* background-color: red; */
+    position: absolute;
+    left: -35px;
+    top: 1px;
+  }
+}
+.header_link {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.2s all;
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: var(--main);
+    position: absolute;
+    bottom: 0px;
+    width: 0%;
+    transition: 0.2s all;
+  }
+  &:hover {
+    color: var(--main);
+    &::after {
+      width: 100%;
+    }
+  }
+  &:nth-child(even) {
+    margin: 0 4rem;
+  }
+}
+
+.cart_wrap {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  & svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.cart_icon {
+  color: var(--black);
+}
+
+.cart_count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: red;
+  border-radius: 8px;
+  color: #fff;
+  height: 16px;
+  line-height: 17px;
+  padding: 0 8px;
+  right: -10px;
+  top: -10px;
+  font-size: 12px;
+}
+
+.header_right {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger_wrap {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.menu {
+  min-width: 300px;
+}
+
+.menu_nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  & a {
+    height: 50px;
+    margin: 0 25px;
+    padding: 25px 0px;
+    font-weight: 800;
+    font-size: 1rem;
+    display: inline;
+    border-bottom: 1px solid var(--gray-2);
+    &:nth-child(even) {
+      margin: 0 25px;
+    }
+    &::after {
+      display: none;
+    }
+  }
+}
+.menu_close {
+  font-size: 3rem;
+  margin-left: auto;
+  margin-right: 20px;
+  position: relative;
+  top: -15px;
+  transition: 0.2s all;
+  cursor: pointer;
+  &:hover {
+    color: var(--main);
+  }
+}

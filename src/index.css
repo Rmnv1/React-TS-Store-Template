@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--black);
+  background-color: var(--gray-3);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* colors */
+  --main: #631cf9;
+  --black: #17171b;
+  --gray-1: #718096;
+  --gray-2: #e2e8f0;
+  --gray-3: #f7fafc;
+  --white: #fff;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--gray-3);
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
