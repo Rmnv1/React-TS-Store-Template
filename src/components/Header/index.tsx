@@ -18,11 +18,19 @@ export default function Header({}: Props) {
   const list = () => (
     <div className={s.menu}>
       <nav className={s.menu_nav}>
-        <span className={s.menu_close} onClick={() => setHamburger(false)}>
-          &times;
-        </span>
+        <div className={s.menu_header}>
+          <div className={s.menu_title}>Меню</div>
+          <span className={s.menu_close} onClick={() => setHamburger(false)}>
+            &times;
+          </span>
+        </div>
         {routes.map((route) => (
-          <NavLink className={s.header_link} key={route.id} to={route.path}>
+          <NavLink
+            className={s.header_link}
+            key={route.id}
+            to={route.path}
+            onClick={() => setHamburger(false)}
+          >
             {route.name}
           </NavLink>
         ))}

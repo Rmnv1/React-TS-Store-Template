@@ -97,7 +97,7 @@ export default function ProductCard({ product }: Props) {
             variant="contained"
             onClick={() => increaseCartQuantity(product.id)}
           >
-            Добавить в корзину
+            В корзину
           </Button>
         )}
       </div>
