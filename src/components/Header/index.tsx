@@ -6,12 +6,14 @@ import s from "./Header.module.scss";
 import { NavLink } from "react-router-dom";
 import routes from "../../pages/routes";
 import Hamburger from "hamburger-react";
+import { useShoppingCart } from "../../context/ShoppingCartContext";
 
 type Props = {};
 
 export default function Header({}: Props) {
   const matches = useMediaQuery("(max-width:1100px)");
   const [hamburger, setHamburger] = useState(false);
+  const { openCart, cartQuantity } = useShoppingCart();
 
   const list = () => (
     <div className={s.menu}>
@@ -50,8 +52,8 @@ export default function Header({}: Props) {
           </div>
           <div className={s.header_right}>
             <button className={s.cart_wrap}>
-              <ShoppingCartIcon className={s.cart_icon} />
-              <span className={s.cart_count}>1</span>
+              <ShoppingCartIcon className={s.cart_icon} onClick={openCart} />
+              <span className={s.cart_count}>{cartQuantity}</span>
             </button>
 
             {matches && (

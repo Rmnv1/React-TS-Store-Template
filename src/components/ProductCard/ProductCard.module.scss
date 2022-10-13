@@ -29,10 +29,27 @@
   max-height: 350px;
   object-fit: contain;
 }
+.price {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
 .btn_wrap {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 35px;
+  flex-direction: column;
+}
+.quantity_wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.quantity {
+  width: 30px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 980px) {

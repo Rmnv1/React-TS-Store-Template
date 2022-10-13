@@ -7,19 +7,22 @@ import Delivery from "./pages/Delivery";
 import About from "./pages/About";
 import routes from "./pages/routes";
 import Footer from "./components/Footer";
+import { ShoppingCartProvider } from "./context/ShoppingCartContext";
 
 type Props = {};
 
 export default function App({}: Props) {
   return (
     <div>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/catalog" element={<Catalog />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-      <Footer />
+      <ShoppingCartProvider>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/catalog" element={<Catalog />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        <Footer />
+      </ShoppingCartProvider>
     </div>
   );
 }
