@@ -31,11 +31,7 @@ export default function index({}: Props) {
         onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
-          <img
-            className={s.banner}
-            src="./React-TS-Store-Template/images/banner.png"
-            alt="banner"
-          />
+          <img className={s.banner} src="./images/banner.png" alt="banner" />
           <Container>
             <div className={s.slider_content}>
               <h1>Заголовок баннера</h1>
@@ -69,11 +65,7 @@ export default function index({}: Props) {
           </Container>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            className={s.banner}
-            src="./React-TS-Store-Template/images/banner.png"
-            alt="banner"
-          />
+          <img className={s.banner} src="./images/banner.png" alt="banner" />
           <Container>
             <div className={s.slider_content}>
               <h1>Заголовок баннера</h1>
@@ -107,11 +99,7 @@ export default function index({}: Props) {
           </Container>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            className={s.banner}
-            src="./React-TS-Store-Template/images/banner.png"
-            alt="banner"
-          />
+          <img className={s.banner} src="./images/banner.png" alt="banner" />
           <Container>
             <div className={s.slider_content}>
               <h1>Заголовок баннера</h1>
