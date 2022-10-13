@@ -6,19 +6,19 @@ const routes = [
   {
     id: 1,
     name: "Главная",
-    path: "/",
+    path: "/React-TS-Store-Template/",
     component: Home,
   },
   {
     id: 2,
     name: "Каталог",
-    path: "/catalog",
+    path: "/React-TS-Store-Template/catalog",
     component: Catalog,
   },
   {
     id: 3,
     name: "О нас",
-    path: "/about",
+    path: "/React-TS-Store-Template/about",
     component: About,
   },
 ];

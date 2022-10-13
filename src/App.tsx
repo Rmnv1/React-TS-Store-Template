@@ -15,9 +15,12 @@ export default function App({}: Props) {
       <ShoppingCartProvider>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/catalog" element={<Catalog />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/React-TS-Store-Template/" element={<Home />} />
+          <Route
+            path="/React-TS-Store-Template/catalog"
+            element={<Catalog />}
+          />
+          <Route path="/React-TS-Store-Template/about" element={<About />} />
         </Routes>
         <Footer />
       </ShoppingCartProvider>

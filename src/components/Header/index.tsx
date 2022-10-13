@@ -43,7 +43,7 @@ export default function Header({}: Props) {
       <Container>
         <div className={s.wrapper}>
           <div className={s.header_left}>
-            <NavLink to={"/"} className={s.logo}>
+            <NavLink to={"/React-TS-Store-Template/"} className={s.logo}>
               Rndm<span>Store</span>
             </NavLink>
             <nav className={s.header_nav}>
